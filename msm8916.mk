@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
+# Dirac
+PRODUCT_PACKAGES += \
+    Dirac
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
