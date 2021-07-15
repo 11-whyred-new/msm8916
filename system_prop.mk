@@ -59,6 +59,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.core_ctl_min_cpu=0 \
     ro.core_ctl_max_cpu=4
 
+# LMKD
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.lmk.critical_upgrade=true \
+ro.lmk.upgrade_pressure=40 \
+ro.lmk.downgrade_pressure=60 \
+ro.lmk.thrashing_limit=30 \
+ro.lmk.thrashing_limit_decay=50
+
+# WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.qmi.adb_logmask=0 \
