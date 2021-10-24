@@ -67,11 +67,6 @@ ro.lmk.downgrade_pressure=60 \
 ro.lmk.thrashing_limit=30 \
 ro.lmk.thrashing_limit_decay=50
 
-# WFD
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.qmi.adb_logmask=0 \
